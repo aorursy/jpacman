@@ -53,4 +53,5 @@ class BoardTest {
     void testSquareAt(int x, int y) {
         assertThat(board.squareAt(x, y)).isEqualTo(grid[x][y]);
     }
+
 }
