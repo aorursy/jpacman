@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
  * @author Arie van Deursen
  */
 public class DirectionTest {
+
     @Test
     void testNorth() {
         Direction north = Direction.valueOf("NORTH");
