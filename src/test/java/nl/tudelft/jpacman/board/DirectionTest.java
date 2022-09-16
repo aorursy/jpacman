@@ -11,9 +11,6 @@ import org.junit.jupiter.api.Test;
  * @author Arie van Deursen
  */
 public class DirectionTest {
-    /**
-     * Do we get the correct delta when moving north?
-     */
     @Test
     void testNorth() {
         Direction north = Direction.valueOf("NORTH");
