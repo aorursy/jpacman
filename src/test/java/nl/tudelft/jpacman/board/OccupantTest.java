@@ -41,7 +41,6 @@ class OccupantTest {
      */
     @Test
     void testOccupy() {
-        // Remove the following placeholder:
         Square square = new BasicSquare();
         unit.occupy(square);
         assertThat(unit.hasSquare()).isTrue();
