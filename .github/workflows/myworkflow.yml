@@ -17,7 +17,6 @@ permissions:
   contents: write
   packages: write
 
-
 jobs:
   build:
 
@@ -34,6 +33,7 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: xvfb-run ./gradlew build
+      
     - name: Generate JaCoCo Badge
       uses: cicirello/jacoco-badge-generator@v2
       with:
@@ -55,6 +55,3 @@ jobs:
           add: '.github/badges/*.svg'
     - name: Show test results
       run: cat build/reports/jacoco/test/jacocoTestReport.csv
-
-
-
